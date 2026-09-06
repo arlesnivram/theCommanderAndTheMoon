@@ -34,11 +34,16 @@ h1{font:700 clamp(2.5rem,8vw,5.8rem)/.95 system-ui,sans-serif;letter-spacing:-.0
 .chapter p{font-size:1.08rem;margin:0 0 1.18em}
 .chapter-end{text-align:center;color:#8a8d98;font-size:1.35rem;margin-top:30px}
 .footer{text-align:center;color:#888d99;font:500 .8rem/1.5 system-ui,sans-serif;padding-top:24px}
+
+.cover{max-width:1100px;margin:0 auto;padding:18px 18px 0}
+.cover img{display:block;width:100%;height:auto;object-fit:contain;border-radius:24px;box-shadow:0 24px 70px rgba(0,0,0,.38);border:1px solid rgba(217,173,104,.22)}
+@media(max-width:600px){.cover{padding:0}.cover img{width:100%;border-radius:0;box-shadow:none;border:0}}
 @media(max-width:650px){.hero{min-height:58vh}.toc ol{columns:1}.chapter{padding-top:42px;padding-bottom:42px}}
 @media print{body{background:white;color:black}.hero{min-height:auto;background:white;color:black;padding:28px 0}.wrap{padding:0}.card{background:white;color:black;border:1px solid #bbb}.story-shell{border:0}.chapter{page-break-before:always;border:0}}
 </style>
 </head>
 <body>
+<div class="cover"><img src="./theCommanderAndTheMoon.png" alt="TO BE — The Commander and the Moon"></div>
 <header class="hero">
 <div class="hero-inner">
 <div class="brand">TO BE</div>
