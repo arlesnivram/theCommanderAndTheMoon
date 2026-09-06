@@ -1,1 +1,973 @@
-<div>Hello world</div>
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TO BE — The Commander and the Moon</title>
+<style>
+:root{--bg:#0c0d12;--panel:#151720;--text:#eeeef2;--muted:#aaaebb;--line:#2c3040;--accent:#d8d9e8;--paper:#fbfbfd;--ink:#171820}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",serif;line-height:1.78}
+a{color:inherit}
+.hero{min-height:72vh;display:flex;align-items:flex-end;padding:64px 24px 56px;background:
+radial-gradient(circle at 78% 18%,rgba(255,255,255,.16),transparent 18%),
+linear-gradient(180deg,#08090d 0%,#10131b 65%,#151720 100%);border-bottom:1px solid var(--line)}
+.hero-inner{width:min(980px,100%);margin:0 auto}
+.brand{font:700 .82rem/1.2 system-ui,sans-serif;letter-spacing:.28em;color:#c7cad5;margin-bottom:16px}
+h1{font:700 clamp(2.5rem,8vw,5.8rem)/.95 system-ui,sans-serif;letter-spacing:-.055em;margin:0;max-width:900px}
+.subtitle{font-size:1.15rem;color:var(--muted);margin:20px 0 0}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.tag{border:1px solid #3a3f51;border-radius:999px;padding:5px 10px;font:500 .78rem/1.2 system-ui,sans-serif;color:#c8cbd5}
+.wrap{width:min(900px,100%);margin:0 auto;padding:28px 18px 80px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin:18px 0}
+.card h2{font:700 1.2rem/1.2 system-ui,sans-serif;margin:0 0 12px}
+.toc ol{margin:0;padding-left:1.3rem;columns:2;column-gap:32px}
+.toc li{margin:8px 0;break-inside:avoid}
+.toc a{text-decoration:none;border-bottom:1px solid transparent}
+.toc a:hover{border-color:#aeb3c5}
+.story-shell{margin-top:34px;background:var(--paper);color:var(--ink);border-radius:20px;overflow:hidden;border:1px solid #d8d9de}
+.chapter{padding:56px clamp(22px,7vw,70px);border-bottom:1px solid #dedfe4}
+.chapter:last-child{border-bottom:0}
+.chapter-kicker{font:700 .72rem/1.2 system-ui,sans-serif;letter-spacing:.18em;color:#777b88;margin-bottom:7px}
+.chapter h2{font:700 clamp(1.7rem,4vw,2.5rem)/1.05 system-ui,sans-serif;letter-spacing:-.025em;margin:0 0 28px}
+.chapter p{font-size:1.08rem;margin:0 0 1.18em}
+.chapter-end{text-align:center;color:#8a8d98;font-size:1.35rem;margin-top:30px}
+.footer{text-align:center;color:#888d99;font:500 .8rem/1.5 system-ui,sans-serif;padding-top:24px}
+@media(max-width:650px){.hero{min-height:58vh}.toc ol{columns:1}.chapter{padding-top:42px;padding-bottom:42px}}
+@media print{body{background:white;color:black}.hero{min-height:auto;background:white;color:black;padding:28px 0}.wrap{padding:0}.card{background:white;color:black;border:1px solid #bbb}.story-shell{border:0}.chapter{page-break-before:always;border:0}}
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="hero-inner">
+<div class="brand">TO BE</div>
+<h1>The Commander<br>and the Moon</h1>
+<p class="subtitle">Il giuramento che attraversò i millenni</p>
+<div class="meta">
+<span class="tag">Bozza narrativa — pronta per revisione</span>
+<span class="tag">Età delle divinità / preistoria → 2022</span>
+<span class="tag">10 capitoli</span>
+<span class="tag">Fantasy mitologico</span>
+<span class="tag">Romance spirituale</span>
+</div>
+</div>
+</header>
+<main class="wrap">
+<section class="card">
+<h2>Sinossi</h2>
+<p>Prima della storia umana, un mercenario divino conquista il grado di Comandante di uno degli eserciti della Luna. Innamorato della dea che non può avere, accetta per Dio una missione sulla Terra destinata a durare secoli e millenni, trasformandola nella sua dedica per lei. La sua essenza viene sigillata in un asteroide e finisce nel sangue di una stirpe umana. Nel 2022 Andrea, uno dei discendenti, comincia a ricordare ciò che non ha mai vissuto e a vedere creature invisibili agli altri. Una notte di Luna piena incontra Mara, una ragazza che prova la stessa inspiegabile pace sotto la Luna e che sembra conoscere, da prima della nascita, il sentimento che attraversa Andrea.</p>
+</section>
+<nav class="card toc" aria-label="Sommario">
+<h2>Sommario</h2>
+<ol>
+<li><a href="#cap-1">Capitolo 1 — Il mercenario che non aveva un trono</a></li>
+<li><a href="#cap-2">Capitolo 2 — La dea oltre la distanza</a></li>
+<li><a href="#cap-3">Capitolo 3 — La dedica eterna</a></li>
+<li><a href="#cap-4">Capitolo 4 — Il primo respiro</a></li>
+<li><a href="#cap-5">Capitolo 5 — Gli occhi che ricordano</a></li>
+<li><a href="#cap-6">Capitolo 6 — Sotto la stessa luna</a></li>
+<li><a href="#cap-7">Capitolo 7 — Come se fosse già accaduto</a></li>
+<li><a href="#cap-8">Capitolo 8 — Il Comandante si sveglia</a></li>
+<li><a href="#cap-9">Capitolo 9 — La distanza di una mano</a></li>
+<li><a href="#cap-10">Capitolo 10 — La missione continua</a></li>
+</ol>
+</nav>
+<section class="story-shell">
+<article class="chapter" id="cap-1">
+      <div class="chapter-kicker">CAPITOLO 1</div>
+      <h2>Il mercenario che non aveva un trono</h2>
+      <p>Prima che gli esseri umani imparassero a dare un nome alle stelle, gli dèi avevano già imparato a dichiararsi guerra.</p>
+<p>Nel cielo non esisteva un unico regno. C&#x27;erano territori di luce, fortezze sospese, città costruite sulle orbite dei pianeti e campi di battaglia che comparivano sopra il mondo per poi svanire prima che un uomo primitivo potesse alzare gli occhi.</p>
+<p>Marte combatteva per conquista. Giove per autorità. Mercurio per rotte, segreti e passaggi. Altri dèi entravano e uscivano dalle alleanze con la stessa rapidità con cui le comete attraversavano il buio.</p>
+<p>Ogni divinità aveva soldati divini, guerrieri nati e addestrati per servire un solo vessillo. E poi c&#x27;erano i mercenari divini.</p>
+<p>Loro non appartenevano a nessuno.</p>
+<p>Venivano pagati con armi, favori, frammenti di potere o anni sottratti alla morte. Combattevano per chi li ingaggiava, finché il patto non terminava.</p>
+<p>Tra loro ce n&#x27;era uno che, all&#x27;inizio, non aveva nulla di speciale.</p>
+<p>Nessun titolo.<br>
+Nessuna stirpe.<br>
+Nessun tempio.</p>
+<p>Aveva soltanto una lama lunga, un&#x27;armatura piena di graffi e una capacità quasi inquietante di tornare vivo.</p>
+<p>Durante una guerra tra le armate di Marte e uno dei regni della Luna, il suo reparto rimase intrappolato su una pianura di roccia bianca. Sopra di loro, il cielo era attraversato da lance rosse.</p>
+<p>Un soldato lunare gli gridò:</p>
+<p>«Mercenario! La linea orientale è caduta!»</p>
+<p>Lui osservò le alture. Centinaia di guerrieri di Marte stavano scendendo verso di loro.</p>
+<p>«Quanti uomini ci restano?»</p>
+<p>«Centododici.»</p>
+<p>«Quanti ne hanno loro?»</p>
+<p>Il soldato deglutì.</p>
+<p>«Forse mille.»</p>
+<p>Il mercenario infilò la lama nel terreno.</p>
+<p>«Allora smetti di contarli.»</p>
+<p>«Che cosa?»</p>
+<p>«Se continui a contarli, ti sembreranno sempre troppi.»</p>
+<p>Radunò soldati e mercenari, fece spegnere le torce sacre e ordinò di abbandonare la posizione che tutti credevano avrebbe difeso. Quando le truppe di Marte caricarono, trovarono soltanto scudi vuoti.</p>
+<p>Il mercenario aveva portato i suoi guerrieri dietro una cresta di cristallo lunare. Aspettò che il nemico entrasse nella valle e poi fece crollare le pareti con le armi d&#x27;assedio rimaste.</p>
+<p>La battaglia finì prima dell&#x27;alba.</p>
+<p>Il generale della Luna arrivò quando il terreno era ancora caldo.</p>
+<p>«Chi ha dato l&#x27;ordine di ritirarsi?»</p>
+<p>Nessuno rispose.</p>
+<p>Il mercenario fece un passo avanti.</p>
+<p>«Io.»</p>
+<p>«Non avevi autorità.»</p>
+<p>«No.»</p>
+<p>«Avresti potuto essere giustiziato.»</p>
+<p>«Sì.»</p>
+<p>«E se il piano fosse fallito?»</p>
+<p>«Sarei morto prima che qualcuno potesse processarmi.»</p>
+<p>Per alcuni secondi nessuno osò parlare.</p>
+<p>Poi il generale rise.</p>
+<p>Quella fu la prima volta che gli affidarono uomini.</p>
+<p>Missione dopo missione, il reparto crebbe. Prima dieci guerrieri. Poi cento. Poi un&#x27;intera compagnia composta da soldati divini e mercenari.</p>
+<p>Lui non pretendeva fedeltà.</p>
+<p>La otteneva.</p>
+<p>Quando un guerriero cadeva, era il primo a tornare indietro. Quando il cibo sacro scarseggiava, mangiava per ultimo. Quando una missione era impossibile, non diceva mai: &quot;Andate.&quot;</p>
+<p>Diceva:</p>
+<p>«Venite con me.»</p>
+<p>Gli anni degli dèi non si contavano come quelli degli uomini. Potevano passare decenni in una campagna e un istante in un&#x27;altra regione del cielo.</p>
+<p>A un certo punto nessuno ricordò più il nome con cui quel mercenario era nato.</p>
+<p>Tutti lo chiamavano allo stesso modo.</p>
+<p>Il Comandante.</p>
+<p>Fu scelto per guidare uno degli eserciti della Luna.</p>
+<p>E per la prima volta, il mercenario senza trono si trovò abbastanza vicino a una divinità da capire che perfino gli dèi potevano essere irraggiungibili.</p>
+      <div class="chapter-end">☾</div>
+    </article>
+<article class="chapter" id="cap-2">
+      <div class="chapter-kicker">CAPITOLO 2</div>
+      <h2>La dea oltre la distanza</h2>
+      <p>La dea della Luna non aveva bisogno di alzare la voce.</p>
+<p>Quando entrava nella sala di guerra, le conversazioni si spegnevano da sole.</p>
+<p>La sua presenza non somigliava a quella di Marte, che riempiva l&#x27;aria di calore, né a quella di Giove, che sembrava rendere più pesante perfino il silenzio. La Luna portava con sé quiete.</p>
+<p>Una quiete capace di far dimenticare, per qualche istante, che fuori dalle mura c&#x27;era una guerra.</p>
+<p>Il Comandante la vide molte volte durante i consigli militari. All&#x27;inizio la guardava come si guarda una sovrana. Poi iniziò ad aspettare quei momenti.</p>
+<p>Non disse nulla a nessuno.</p>
+<p>Un mercenario poteva ricevere un esercito.<br>
+Poteva essere nominato comandante.<br>
+Poteva ottenere onori, armi e perfino una porzione di immortalità.</p>
+<p>Ma rimaneva un mercenario.</p>
+<p>Lei era una divinità.</p>
+<p>Tra loro non c&#x27;era soltanto una differenza di rango. C&#x27;era una distanza scritta nell&#x27;ordine stesso del mondo.</p>
+<p>Una sera, dopo una battaglia contro le legioni di Mercurio, il Comandante rimase solo su una terrazza della cittadella lunare. Sotto di lui la Terra era ancora giovane, coperta da foreste, ghiaccio e fuochi lontani.</p>
+<p>«Non festeggi con i tuoi uomini?»</p>
+<p>Riconobbe la voce senza voltarsi.</p>
+<p>«Festeggiano meglio quando non sono lì a ricordare loro che domani potremmo ripartire.»</p>
+<p>La dea della Luna si fermò accanto a lui.</p>
+<p>«Hai vinto tre battaglie in una sola rotazione.»</p>
+<p>«Ne ho quasi perse due.»</p>
+<p>«È per questo che ti seguono. Ricordi quelle che potevi perdere.»</p>
+<p>Il Comandante sorrise appena.</p>
+<p>«E gli dèi? Che cosa ricordano?»</p>
+<p>Lei guardò la Terra.</p>
+<p>«Quello che conviene ricordare.»</p>
+<p>Lui la osservò di profilo. Avrebbe voluto dirle che, da quando l&#x27;aveva conosciuta, ogni notte gli sembrava diversa. Avrebbe voluto dirle che combatteva meglio quando sapeva che sarebbe tornato in una città illuminata dalla sua presenza.</p>
+<p>Non lo fece.</p>
+<p>Lei se ne accorse comunque.</p>
+<p>«Hai qualcosa da dirmi?»</p>
+<p>«Molte cose.»</p>
+<p>«E perché non le dici?»</p>
+<p>«Perché alcune parole cambiano il rapporto tra due persone.»</p>
+<p>La dea inclinò il capo.</p>
+<p>«Noi non siamo due persone.»</p>
+<p>Il Comandante abbassò lo sguardo.</p>
+<p>«Appunto.»</p>
+<p>Per la prima volta lei non trovò subito una risposta.</p>
+<p>Passarono altre guerre.</p>
+<p>Il Comandante guidò assalti contro Marte, scortò emissari attraverso territori controllati da Mercurio, difese santuari lunari da eserciti senza bandiera. Più saliva di grado, più capiva che quel grado non avrebbe mai colmato la distanza.</p>
+<p>Un giorno tornò da una missione con l&#x27;armatura spaccata sulla spalla.</p>
+<p>La dea lo aspettava nella sala medica.</p>
+<p>«Mi hanno detto che hai coperto la ritirata da solo.»</p>
+<p>«Esagerano.»</p>
+<p>«Quanti erano?»</p>
+<p>«Abbastanza.»</p>
+<p>«Questa non è una risposta.»</p>
+<p>«È quella che do quando non voglio essere rimproverato.»</p>
+<p>Lei gli si avvicinò e sfiorò con due dita il bordo spezzato dell&#x27;armatura.</p>
+<p>Il metallo si ricompose sotto una luce bianca.</p>
+<p>«Non sei immortale quanto credi.»</p>
+<p>«Non credo di esserlo.»</p>
+<p>«Allora perché continui a comportarti come se la morte dovesse aspettare il tuo permesso?»</p>
+<p>Il Comandante la guardò.</p>
+<p>«Perché ci sono cose per cui vale la pena tornare.»</p>
+<p>Lei ritirò lentamente la mano.</p>
+<p>Questa volta entrambi compresero ciò che lui non aveva detto.</p>
+<p>Ma nessuno dei due oltrepassò quella linea.</p>
+<p>Quella notte il Comandante prese una decisione.</p>
+<p>Se non poteva offrirle una vita insieme, avrebbe trovato qualcosa che potesse offrirle al posto di quella vita.</p>
+<p>Non un gioiello.<br>
+Non una vittoria.<br>
+Non un regno.</p>
+<p>Una missione.</p>
+<p>Qualcosa che durasse più di loro.</p>
+      <div class="chapter-end">☾</div>
+    </article>
+<article class="chapter" id="cap-3">
+      <div class="chapter-kicker">CAPITOLO 3</div>
+      <h2>La dedica eterna</h2>
+      <p>La chiamata arrivò senza messaggeri.</p>
+<p>Nel mezzo della notte, tutte le fiamme della cittadella lunare si piegarono nella stessa direzione.</p>
+<p>Il Comandante aprì gli occhi.</p>
+<p>Davanti alla sua porta non c&#x27;era nessuno, eppure una voce attraversò la stanza.</p>
+<p>«Vieni.»</p>
+<p>Non era Marte.<br>
+Non era Giove.<br>
+Non era Mercurio.<br>
+Non era la Luna.</p>
+<p>Era una voce che sembrava provenire da un punto più antico degli dèi stessi.</p>
+<p>Il Comandante seguì la luce fino a un luogo che non aveva mai visto: una sala senza pareti, sospesa nel buio, dove le stelle sembravano vicinissime.</p>
+<p>Lì comprese chi lo aveva chiamato.</p>
+<p>Dio.</p>
+<p>Non una delle divinità in guerra. Qualcosa che persino loro nominavano con cautela.</p>
+<p>Non riuscì a distinguere un volto.</p>
+<p>«Hai servito molti.»</p>
+<p>«È il lavoro di un mercenario.»</p>
+<p>«Hai combattuto per ricompense.»</p>
+<p>«All&#x27;inizio.»</p>
+<p>«E adesso?»</p>
+<p>Il Comandante rimase in silenzio.</p>
+<p>La voce continuò.</p>
+<p>«Ho una missione per te.»</p>
+<p>«Contro chi?»</p>
+<p>«Non lo saprai.»</p>
+<p>«Dove?»</p>
+<p>«Sulla Terra.»</p>
+<p>«Per quanto tempo?»</p>
+<p>Le stelle attorno a lui sembrarono muoversi.</p>
+<p>«Finché sarà necessario.»</p>
+<p>Il Comandante strinse la mascella.</p>
+<p>«Secoli?»</p>
+<p>Nessuna risposta.</p>
+<p>«Millenni?»</p>
+<p>La voce disse:</p>
+<p>«Forse oltre.»</p>
+<p>Per la prima volta dopo innumerevoli battaglie, il Comandante sentì paura.</p>
+<p>«E qual è la missione?»</p>
+<p>«Ti verrà rivelata mentre il tempo passa.»</p>
+<p>«Mi stai chiedendo di partire senza sapere perché.»</p>
+<p>«Sì.»</p>
+<p>«Potrei non tornare.»</p>
+<p>«Sì.»</p>
+<p>Il Comandante pensò alla Luna.</p>
+<p>Poi sorrise.</p>
+<p>«Accetto.»</p>
+<p>La luce svanì.</p>
+<p>Prima della partenza chiese di incontrare la dea una sola volta.</p>
+<p>Si trovarono sulla stessa terrazza da cui avevano guardato la Terra anni prima.</p>
+<p>Lei sapeva già.</p>
+<p>«È vero?»</p>
+<p>«Sì.»</p>
+<p>«Una missione sulla Terra.»</p>
+<p>«Sì.»</p>
+<p>«Senza termine.»</p>
+<p>Il Comandante annuì.</p>
+<p>La dea lo fissò a lungo.</p>
+<p>«Puoi rifiutare.»</p>
+<p>«Potrei.»</p>
+<p>«Allora fallo.»</p>
+<p>Era la prima volta che la sentiva parlare in quel modo.</p>
+<p>Lui inspirò lentamente.</p>
+<p>«Non posso darti quello che vorrei.»</p>
+<p>«Non decidere al posto mio.»</p>
+<p>«Non sto decidendo per te.»</p>
+<p>«Allora perché parti?»</p>
+<p>Il Comandante guardò il mondo sotto di loro.</p>
+<p>«Perché non posso chiederti di essere qualcosa che il nostro mondo non permetterebbe. Non posso stare al tuo fianco come vorrei. Ma posso scegliere che cosa fare della mia esistenza.»</p>
+<p>Lei non disse nulla.</p>
+<p>Lui continuò:</p>
+<p>«Questa missione sarà la mia dedica per te.»</p>
+<p>La dea della Luna abbassò gli occhi.</p>
+<p>«Una missione che potrebbe durare per sempre?»</p>
+<p>«Allora sarà una dedica che durerà per sempre.»</p>
+<p>«E se dimenticherai?»</p>
+<p>«Troverò un modo per ricordare.»</p>
+<p>«E se non avrai più il tuo corpo?»</p>
+<p>Il Comandante sorrise.</p>
+<p>«Allora ricorderà qualcosa di me.»</p>
+<p>Lei si avvicinò.</p>
+<p>Per un istante sembrò che avrebbe sollevato una mano verso il suo viso, ma si fermò prima di toccarlo.</p>
+<p>«Tu sei soltanto un mercenario divino.»</p>
+<p>Lui abbassò il capo.</p>
+<p>«Lo so.»</p>
+<p>La sua voce si fece più dolce.</p>
+<p>«Era questo che stavi per dire?»</p>
+<p>Il Comandante la guardò.</p>
+<p>Lei aveva gli occhi lucidi, ma non pianse.</p>
+<p>«No,» disse lui. «Stavo per dire che sono stato fortunato ad averti conosciuta.»</p>
+<p>Il rituale iniziò all&#x27;alba.</p>
+<p>L&#x27;armatura del Comandante venne rimossa. La sua forma fisica cominciò a dissolversi in una nebbia luminosa. Prima le mani. Poi il petto. Poi il volto.</p>
+<p>La sua essenza fu trasformata in gas e sigillata dentro un asteroide scuro, piccolo abbastanza da passare inosservato nelle guerre degli dèi.</p>
+<p>L&#x27;ultima cosa che vide fu la dea della Luna.</p>
+<p>Non disse addio.</p>
+<p>Nemmeno lei.</p>
+<p>L&#x27;asteroide venne spinto verso la Terra.</p>
+<p>Attraversò il cielo per un tempo che nessun uomo avrebbe saputo misurare.</p>
+<p>Poi entrò nell&#x27;atmosfera.</p>
+<p>Divenne fuoco.</p>
+<p>Divenne meteorite.</p>
+<p>E sotto quella scia, nella notte primitiva, un essere umano che stava cacciando alzò lo sguardo.</p>
+      <div class="chapter-end">☾</div>
+    </article>
+<article class="chapter" id="cap-4">
+      <div class="chapter-kicker">CAPITOLO 4</div>
+      <h2>Il primo respiro</h2>
+      <p>L&#x27;uomo primitivo non conosceva la parola &quot;meteorite&quot;.</p>
+<p>Conosceva il fuoco.<br>
+Conosceva il sangue.<br>
+Conosceva la fame.<br>
+Conosceva il rumore che facevano gli animali quando qualcosa di più grande li seguiva nel buio.</p>
+<p>Quella notte stava inseguendo un cervo ferito quando il cielo si aprì.</p>
+<p>Una linea bianca attraversò le stelle.</p>
+<p>L&#x27;uomo si fermò.</p>
+<p>Il cervo fuggì.</p>
+<p>Poi arrivò il rumore.</p>
+<p>Il terreno tremò e una luce esplose oltre gli alberi.</p>
+<p>L&#x27;uomo rimase immobile per qualche secondo, combattuto tra la paura e la curiosità. Infine avanzò.</p>
+<p>Trovò un cratere poco profondo. Al centro c&#x27;era una pietra nera spaccata in due.</p>
+<p>Dal suo interno usciva un gas chiaro.</p>
+<p>L&#x27;uomo si coprì il volto con un braccio.</p>
+<p>Troppo tardi.</p>
+<p>Inspirò.</p>
+<p>Il mondo scomparve.</p>
+<p>Cadde a terra.</p>
+<p>Nel sonno vide cose che nessun essere umano aveva mai visto.</p>
+<p>Eserciti sopra le nuvole.<br>
+Torri costruite sulla luce.<br>
+Un guerriero con una lama lunga.<br>
+Una donna circondata da un chiarore bianco.<br>
+Una Terra osservata da molto lontano.</p>
+<p>Poi sentì una frase.</p>
+<p>Non nella sua lingua.</p>
+<p>Non in nessuna lingua che sarebbe esistita per migliaia di anni.</p>
+<p>Eppure la comprese.</p>
+<p>Una dedica che durerà per sempre.</p>
+<p>Quando si svegliò, il cratere era freddo.</p>
+<p>Il gas era scomparso.</p>
+<p>L&#x27;uomo tornò alla sua tribù. Per giorni ebbe febbre. Di notte indicava la Luna e pronunciava suoni che nessuno comprendeva.</p>
+<p>Poi guarì.</p>
+<p>Visse.</p>
+<p>Ebbe figli.</p>
+<p>I figli ebbero altri figli.</p>
+<p>Nel loro sangue rimase qualcosa che non apparteneva alla loro specie.</p>
+<p>Non era il corpo del Comandante. Quello era finito.</p>
+<p>Era una traccia.</p>
+<p>Un&#x27;impronta capace di attraversare la discendenza.</p>
+<p>Lo spirito del Comandante si era marchiato nel DNA del primo uomo che aveva respirato il gas.</p>
+<p>Passarono generazioni.</p>
+<p>In alcuni discendenti la traccia era quasi silenziosa. In altri compariva in sogni strani, in una familiarità inspiegabile con la Luna, in un talento per orientarsi guardando il cielo o in una sensazione di nostalgia per luoghi mai visitati.</p>
+<p>Nessuno capiva.</p>
+<p>Nessuno poteva capire.</p>
+<p>Le tribù diventarono villaggi.<br>
+I villaggi città.<br>
+Le città regni.</p>
+<p>Cambiarono le lingue.</p>
+<p>Nacquero religioni.<br>
+Caddero imperi.<br>
+Vennero costruiti templi e poi distrutti.<br>
+Il nome di Marte sopravvisse.<br>
+Quello di Giove sopravvisse.<br>
+Quello di Mercurio sopravvisse.<br>
+La Luna continuò a essere guardata da chiunque alzasse gli occhi.</p>
+<p>Il Comandante, invece, dormiva.</p>
+<p>Dormì durante guerre che non erano più degli dèi ma degli uomini.</p>
+<p>Dormì mentre il bronzo diventava ferro.</p>
+<p>Dormì mentre sulle strade comparivano croci.</p>
+<p>La prima volta che uno dei suoi discendenti passò davanti a una croce, la traccia nel sangue reagì.</p>
+<p>Solo per un istante.</p>
+<p>Un battito più forte.<br>
+Un brivido.<br>
+Una sensazione di essere chiamato.</p>
+<p>Poi di nuovo silenzio.</p>
+<p>I secoli continuarono.</p>
+<p>Il simbolo ricomparve milioni di volte davanti agli occhi della sua discendenza.</p>
+<p>Ogni volta, qualcosa bussava dall&#x27;interno.</p>
+<p>Mai abbastanza forte da svegliarsi.</p>
+<p>Fino al 2022.</p>
+<p>In una città che il Comandante non avrebbe potuto immaginare, un ragazzo di ventiquattro anni di nome Andrea passò davanti a una piccola croce appesa all&#x27;ingresso di una chiesa.</p>
+<p>Si fermò.</p>
+<p>Non era particolarmente religioso. Non stava pregando. Non stava cercando risposte.</p>
+<p>Eppure il suo cuore accelerò.</p>
+<p>Una voce, lontanissima, sembrò pronunciare una sola parola dentro di lui.</p>
+<p>«Vieni.»</p>
+<p>Andrea si voltò.</p>
+<p>La strada era vuota.</p>
+<p>Quella notte sognò la nascita dell&#x27;universo.</p>
+      <div class="chapter-end">☾</div>
+    </article>
+<article class="chapter" id="cap-5">
+      <div class="chapter-kicker">CAPITOLO 5</div>
+      <h2>Gli occhi che ricordano</h2>
+      <p>Andrea si svegliò alle 4:17 con le mani tremanti.</p>
+<p>Aveva ancora davanti agli occhi un&#x27;esplosione di luce. Non una bomba, non un incendio: qualcosa di immensamente più grande. Nel sogno aveva visto il buio prima delle stelle, poi materia, fuoco e galassie che si formavano come vortici.</p>
+<p>Accese il telefono e scrisse:</p>
+<p>&quot;Universo.<br>
+Guerra.<br>
+Luna.<br>
+Un uomo con armatura.<br>
+Non sono io.&quot;</p>
+<p>Cancellò l&#x27;ultima frase.</p>
+<p>La riscrisse.</p>
+<p>&quot;Non credo di essere io.&quot;</p>
+<p>Durante il giorno tutto sembrava normale. Andrea lavorava, rispondeva ai messaggi, faceva la spesa. Poi passava davanti a una croce.</p>
+<p>Una collana.<br>
+La cima di una chiesa.<br>
+Una piccola croce di legno in una vetrina.</p>
+<p>Ogni volta sentiva una chiamata. Non parole precise: la sensazione che qualcuno lo stesse aspettando da un&#x27;altra parte.</p>
+<p>Di notte accadeva di peggio.</p>
+<p>La prima creatura comparve vicino a un parcheggio. Era curva, con braccia troppo lunghe e pelle grigia. Andrea pensò a un uomo ferito finché non vide la bocca aprirsi quasi fino alle orecchie.</p>
+<p>Chiuse gli occhi.</p>
+<p>Quando li riaprì c&#x27;era soltanto un ragazzo che guardava il telefono.</p>
+<p>Un&#x27;altra sera vide tre donne immobili sul marciapiede, con lunghi abiti chiari e il volto rivolto verso il cielo.</p>
+<p>Una girò lentamente la testa verso di lui.</p>
+<p>Le labbra non si mossero, ma Andrea sentì due parole:</p>
+<p>Sisters of the Moon.</p>
+<p>Poi un autobus passò tra loro e le donne sparirono.</p>
+<p>Le figure peggiori erano quelle vestite di nero.</p>
+<p>Stavano accanto agli alberi.</p>
+<p>Cappucci profondi.<br>
+Nessun volto.<br>
+Nessun movimento.</p>
+<p>Andrea cominciò a evitare la notte, ma scoprì presto un&#x27;eccezione.</p>
+<p>Quando la Luna era visibile, stava meglio.</p>
+<p>Più era luminosa, più la paura diminuiva. Durante il plenilunio sentiva una pace quasi fisica.</p>
+<p>Ne parlò con il suo amico Davide.</p>
+<p>«Quindi vedi una croce e senti che qualcuno ti chiama?»</p>
+<p>«Sì.»</p>
+<p>«Ansia?»</p>
+<p>«No.»</p>
+<p>«Paura?»</p>
+<p>«Nemmeno.»</p>
+<p>Davide si guardò intorno.</p>
+<p>«Andrea?»</p>
+<p>«Scemo.»</p>
+<p>«Sto verificando.»</p>
+<p>Andrea rise, poi diventò serio.</p>
+<p>«Non è la cosa più strana.»</p>
+<p>«C&#x27;è altro?»</p>
+<p>Gli raccontò delle creature.</p>
+<p>Davide non cercò di convincerlo che fossero reali.</p>
+<p>«Qualsiasi cosa sia, se ti spaventa così tanto non devi affrontarla da solo.»</p>
+<p>Quella frase bastò.</p>
+<p>Andrea iniziò ad annotare tutto: ora, luogo, fase della Luna, croci, visioni, sensazioni.</p>
+<p>Il pattern diventò evidente.</p>
+<p>Le visioni erano più intense con il buio.<br>
+La chiamata delle croci poteva arrivare in qualsiasi momento.<br>
+I ricordi aumentavano con la Luna piena.</p>
+<p>La successiva era prevista per un venerdì.</p>
+<p>Andrea uscì senza sapere cosa cercasse.</p>
+<p>Camminò quasi un&#x27;ora. Sotto quella luce la città sembrava più nitida, come se nascondesse un secondo strato.</p>
+<p>A un incrocio vide un ghoul accovacciato sul cofano di un&#x27;auto.</p>
+<p>Abbassò lo sguardo.</p>
+<p>«Non ti vedo.»</p>
+<p>La creatura sollevò la testa.</p>
+<p>«Tu sì.»</p>
+<p>La voce comparve direttamente nella sua mente.</p>
+<p>Andrea indietreggiò. Dietro di lui una campana suonò una volta.</p>
+<p>Sopra una porta c&#x27;era una croce.</p>
+<p>La chiamata esplose dentro di lui.</p>
+<p>Per un istante non indossava più i suoi vestiti.</p>
+<p>Aveva un&#x27;armatura.</p>
+<p>La mano cercò una lama che non esisteva.</p>
+<p>«Linea stretta!» gridò.</p>
+<p>Un passante lo guardò male.</p>
+<p>La visione svanì.</p>
+<p>Il ghoul non c&#x27;era più.</p>
+<p>Andrea continuò a camminare finché raggiunse una piazza.</p>
+<p>Le Sisters of the Moon erano sul marciapiede opposto.</p>
+<p>Questa volta erano cinque.</p>
+<p>Non guardavano lui.</p>
+<p>Andrea seguì la direzione dei loro occhi.</p>
+<p>Dall&#x27;altra parte della piazza c&#x27;era una ragazza appoggiata a una ringhiera, il volto rivolto alla Luna piena.</p>
+<p>Andrea sentì il mondo fermarsi.</p>
+<p>Non perché fosse bella, anche se lo era.</p>
+<p>Ma perché qualcosa nel suo sangue la riconobbe.</p>
+<p>La ragazza abbassò lo sguardo.</p>
+<p>Lo vide.</p>
+<p>E rimase immobile anche lei.</p>
+      <div class="chapter-end">☾</div>
+    </article>
+<article class="chapter" id="cap-6">
+      <div class="chapter-kicker">CAPITOLO 6</div>
+      <h2>Sotto la stessa luna</h2>
+      <p>Andrea avrebbe potuto continuare a camminare.</p>
+<p>Invece attraversò la piazza.</p>
+<p>Ogni passo aumentava una sensazione assurda: non stava andando verso una sconosciuta.</p>
+<p>Stava tornando da qualcuno.</p>
+<p>La ragazza fu la prima a parlare.</p>
+<p>«Ci conosciamo?»</p>
+<p>Andrea quasi rise per il sollievo.</p>
+<p>«Stavo per chiederti la stessa cosa.»</p>
+<p>Lei lo studiò.</p>
+<p>«No, seriamente.»</p>
+<p>«Seriamente, non credo.»</p>
+<p>«Non credi?»</p>
+<p>«Se ti avessi conosciuta, penso che me lo ricorderei.»</p>
+<p>La ragazza sorrise.</p>
+<p>«Bella risposta.»</p>
+<p>«Era anche vera.»</p>
+<p>Lei si chiamava Mara.</p>
+<p>Aveva ventitré anni e abitava a pochi quartieri da lì. Era uscita senza una ragione precisa.</p>
+<p>«Quando c&#x27;è la Luna piena mi piace camminare,» disse.</p>
+<p>Andrea la fissò.</p>
+<p>«Che c&#x27;è?»</p>
+<p>«Niente.»</p>
+<p>«Hai fatto quella faccia da &quot;non è niente&quot; che significa esattamente il contrario.»</p>
+<p>Andrea indicò il cielo.</p>
+<p>«Ti fa stare bene?»</p>
+<p>Mara alzò gli occhi verso la Luna.</p>
+<p>«Sì.»</p>
+<p>«Quanto bene?»</p>
+<p>Lei ci pensò.</p>
+<p>«Come se tutto fosse al posto giusto.»</p>
+<p>Andrea sentì un brivido.</p>
+<p>«Anche a me.»</p>
+<p>Mara tornò a guardarlo.</p>
+<p>Per qualche secondo rimasero in silenzio.</p>
+<p>«Okay,» disse lei. «Questa è strana.»</p>
+<p>«Aspetta di sentire il resto.»</p>
+<p>«C&#x27;è un resto?»</p>
+<p>Andrea decise di non raccontarle subito dei ghoul.</p>
+<p>«Sogni strani.»</p>
+<p>«Che tipo di sogni?»</p>
+<p>«Posti che non ho mai visto. Stelle. Guerre. Una città... credo.»</p>
+<p>Mara smise di sorridere.</p>
+<p>«Bianca?»</p>
+<p>Andrea sentì il sangue gelarsi.</p>
+<p>«Cosa?»</p>
+<p>«La città. Era bianca?»</p>
+<p>«Sì.»</p>
+<p>Lei fece un passo indietro.</p>
+<p>«Io sogno una terrazza.»</p>
+<p>Andrea non riuscì a parlare.</p>
+<p>Mara continuò più lentamente.</p>
+<p>«C&#x27;è un pianeta sotto. È enorme. E sento che sto aspettando qualcuno.»</p>
+<p>Andrea ebbe un lampo.</p>
+<p>Una mano quasi sollevata verso il volto di un guerriero.<br>
+Un&#x27;armatura spezzata.<br>
+Una voce: Non sei immortale quanto credi.</p>
+<p>Si portò una mano alla tempia.</p>
+<p>«Tutto bene?»</p>
+<p>«Sì.»</p>
+<p>«Non sembra.»</p>
+<p>Andrea la guardò.</p>
+<p>«Nel tuo sogno... quello che aspetti arriva?»</p>
+<p>Mara chiuse gli occhi per ricordare.</p>
+<p>«A volte sì.»</p>
+<p>«Lo vedi?»</p>
+<p>«Mai bene.»</p>
+<p>«Come ti fa sentire?»</p>
+<p>Lei riaprì gli occhi.</p>
+<p>«Come se sapessi che mi vuole dire qualcosa e non riesca a farlo.»</p>
+<p>Andrea sentì il cuore battere più forte.</p>
+<p>Non poteva raccontarle che lui aveva la sensazione opposta.</p>
+<p>Come se avesse passato un&#x27;esistenza intera cercando il coraggio di dire qualcosa a lei.</p>
+<p>Restarono insieme fino a tardi.</p>
+<p>Parlarono di cose normali proprio perché niente di quella serata lo era: musica, lavoro, film, cibo, famiglie.</p>
+<p>Quando si salutarono, Mara fece qualche passo e poi si voltò.</p>
+<p>«Andrea?»</p>
+<p>«Sì?»</p>
+<p>«Non so perché, ma sono contenta di averti ritrovato.»</p>
+<p>Si bloccò.</p>
+<p>«Volevo dire conosciuto.»</p>
+<p>Andrea sorrise.</p>
+<p>«Forse avevi ragione la prima volta.»</p>
+<p>Quella notte non vide ghoul.</p>
+<p>Non vide figure nere.</p>
+<p>Sognò soltanto la Luna.</p>
+<p>E per la prima volta, nel sogno, il Comandante aprì gli occhi.</p>
+      <div class="chapter-end">☾</div>
+    </article>
+<article class="chapter" id="cap-7">
+      <div class="chapter-kicker">CAPITOLO 7</div>
+      <h2>Come se fosse già accaduto</h2>
+      <p>Andrea e Mara cominciarono a vedersi spesso.</p>
+<p>Non lo decisero davvero.</p>
+<p>Successe.</p>
+<p>Un caffè dopo il lavoro diventò una passeggiata. Una passeggiata diventò una cena veloce. Poi iniziarono a scriversi quando il cielo era particolarmente limpido.</p>
+<p>Mara gli mandava una foto della Luna.</p>
+<p>&quot;È uscita.&quot;</p>
+<p>Andrea rispondeva:</p>
+<p>&quot;Me n&#x27;ero accorto.&quot;</p>
+<p>&quot;Come?&quot;</p>
+<p>&quot;Mi sento meglio.&quot;</p>
+<p>La cosa più strana era che quella sensazione non dipendeva più dal cielo.</p>
+<p>Una mattina si incontrarono sotto un sole fortissimo.</p>
+<p>Nessuna Luna visibile.</p>
+<p>Eppure, quando Mara si sedette davanti a lui, Andrea provò la stessa calma delle notti di plenilunio.</p>
+<p>Lei posò la tazza.</p>
+<p>«Lo senti anche tu, vero?»</p>
+<p>Andrea non finse di non capire.</p>
+<p>«Sì.»</p>
+<p>«È come se fosse qui.»</p>
+<p>«La Luna?»</p>
+<p>Mara annuì.</p>
+<p>«Anche se non si vede.»</p>
+<p>Andrea sorrise.</p>
+<p>«Forse non è la Luna.»</p>
+<p>Lei lo guardò.</p>
+<p>«E cos&#x27;è?»</p>
+<p>«Non lo so.»</p>
+<p>«Ottima teoria.»</p>
+<p>Risero.</p>
+<p>Con il tempo cominciarono a parlare apertamente dei sogni.</p>
+<p>Andrea le raccontò del guerriero.</p>
+<p>Non disse ancora &quot;Comandante&quot;. Quella parola gli era comparsa nella mente una notte e lo aveva spaventato.</p>
+<p>Mara raccontò della donna sulla terrazza.</p>
+<p>«Non penso di essere lei,» disse.</p>
+<p>«Nemmeno io penso di essere lui.»</p>
+<p>«Però?»</p>
+<p>Andrea rigirò il cucchiaino tra le dita.</p>
+<p>«Però quando sogno quello che prova... non sembra un ricordo inventato.»</p>
+<p>Mara lo osservò.</p>
+<p>«Che cosa prova?»</p>
+<p>Andrea alzò gli occhi.</p>
+<p>La domanda lo mise in difficoltà.</p>
+<p>«Non lo so spiegare.»</p>
+<p>«Prova.»</p>
+<p>«È innamorato.»</p>
+<p>Mara non disse nulla.</p>
+<p>«Della donna sulla terrazza?» chiese infine.</p>
+<p>Andrea annuì.</p>
+<p>Lei abbassò lo sguardo sulla tazza.</p>
+<p>«Io lo so.»</p>
+<p>«Cosa?»</p>
+<p>«Nei miei sogni. So che lui la ama.»</p>
+<p>Andrea sentì un colpo allo stomaco.</p>
+<p>«Lei lo sa?»</p>
+<p>Mara rimase immobile.</p>
+<p>«Credo di sì.»</p>
+<p>«E cosa prova?»</p>
+<p>Questa volta fu lei a non rispondere subito.</p>
+<p>«È complicato.»</p>
+<p>Andrea sorrise senza allegria.</p>
+<p>«Quindi certe cose non cambiano nemmeno dopo qualche migliaio di anni.»</p>
+<p>Mara rise.</p>
+<p>Poi diventò seria.</p>
+<p>«Andrea, quando ti ho visto quella sera... ho avuto paura.»</p>
+<p>«Di me?»</p>
+<p>«No. Del fatto che mi sembrassi familiare.»</p>
+<p>«Anche tu a me.»</p>
+<p>«Non è solo familiarità.» Si toccò il petto. «È come se una parte di me sapesse già cosa provi, prima ancora che tu lo sappia.»</p>
+<p>Andrea smise di muovere il cucchiaino.</p>
+<p>Per un istante, il locale scomparve.</p>
+<p>Vide la dea della Luna davanti a lui.</p>
+<p>&quot;Questa missione sarà la mia dedica per te.&quot;</p>
+<p>Poi tutto tornò normale.</p>
+<p>Mara aveva allungato una mano sul tavolo.</p>
+<p>Non lo toccò.</p>
+<p>La lasciò lì, a pochi centimetri dalla sua.</p>
+<p>Andrea guardò quello spazio minuscolo.</p>
+<p>Gli sembrò più difficile da attraversare di qualunque campo di battaglia che il Comandante avesse mai affrontato.</p>
+      <div class="chapter-end">☾</div>
+    </article>
+<article class="chapter" id="cap-8">
+      <div class="chapter-kicker">CAPITOLO 8</div>
+      <h2>Il Comandante si sveglia</h2>
+      <p>Il ricordo completo arrivò durante un&#x27;altra notte di Luna piena.</p>
+<p>Andrea e Mara erano seduti su una panchina in un parco quasi vuoto.</p>
+<p>Parlavano poco.</p>
+<p>Avevano imparato che non serviva riempire ogni silenzio.</p>
+<p>A un certo punto Mara indicò un albero.</p>
+<p>«Lì.»</p>
+<p>Andrea seguì il dito.</p>
+<p>Accanto al tronco c&#x27;era una delle figure nere.</p>
+<p>Cappuccio.<br>
+Tunica.<br>
+Nessun volto.</p>
+<p>«La vedi?» sussurrò Andrea.</p>
+<p>«Sì.»</p>
+<p>Fu la prima volta che qualcun altro confermò una delle sue visioni.</p>
+<p>La figura sollevò lentamente un braccio.</p>
+<p>Non verso Andrea.</p>
+<p>Verso Mara.</p>
+<p>Dentro di lui qualcosa esplose.</p>
+<p>Andrea non vide più il parco.</p>
+<p>Era su un campo di battaglia.</p>
+<p>Un esercito correva alle sue spalle.</p>
+<p>«Scudi avanti!»</p>
+<p>La sua voce era diversa.</p>
+<p>Più profonda.</p>
+<p>Una creatura di ombra attraversò la linea e puntò verso una figura luminosa.</p>
+<p>La Luna.</p>
+<p>Il Comandante si lanciò davanti a lei.</p>
+<p>Andrea tornò nel presente con il fiato corto.</p>
+<p>Era in piedi.</p>
+<p>Si era messo tra Mara e la figura incappucciata senza nemmeno rendersene conto.</p>
+<p>«Andrea.»</p>
+<p>«Stai dietro di me.»</p>
+<p>«Andrea, guardami.»</p>
+<p>Lui non riusciva a distogliere gli occhi dall&#x27;ombra.</p>
+<p>«Non ti avvicinare a lei.»</p>
+<p>La figura inclinò il capo.</p>
+<p>Poi una voce riempì la mente di Andrea.</p>
+<p>Comandante.</p>
+<p>Le ginocchia gli cedettero.</p>
+<p>Mara lo afferrò prima che cadesse.</p>
+<p>Il mondo diventò bianco.</p>
+<p>Andrea rivide tutto.</p>
+<p>Il mercenario senza nome.<br>
+Le battaglie.<br>
+L&#x27;esercito della Luna.<br>
+La terrazza.<br>
+La dea.<br>
+Dio.<br>
+La missione.<br>
+La trasformazione.<br>
+Il meteorite.<br>
+L&#x27;uomo primitivo che respirava il gas.<br>
+Generazioni di volti, uno dopo l&#x27;altro, fino al suo.</p>
+<p>Non era reincarnazione.</p>
+<p>Non esattamente.</p>
+<p>Il Comandante non era diventato Andrea.</p>
+<p>Era stato trasportato fino a lui.</p>
+<p>Come un messaggio scritto nel sangue.</p>
+<p>Andrea aprì gli occhi.</p>
+<p>Era sdraiato sull&#x27;erba.</p>
+<p>Mara era accanto a lui.</p>
+<p>«Ci sei?»</p>
+<p>«Sì.»</p>
+<p>«Mi hai spaventata.»</p>
+<p>Andrea si mise seduto.</p>
+<p>La figura nera era scomparsa.</p>
+<p>«Ho ricordato.»</p>
+<p>Mara impallidì.</p>
+<p>«Cosa?»</p>
+<p>«Lui.»</p>
+<p>«Il guerriero?»</p>
+<p>Andrea annuì.</p>
+<p>«Era un mercenario divino. Poi è diventato comandante di uno degli eserciti della Luna.»</p>
+<p>Mara lo fissava senza respirare quasi.</p>
+<p>«E la donna?»</p>
+<p>Andrea esitò.</p>
+<p>«La dea della Luna.»</p>
+<p>Lei chiuse gli occhi.</p>
+<p>Una lacrima le scese senza che sembrasse accorgersene.</p>
+<p>«Perché sto piangendo?»</p>
+<p>Andrea non seppe cosa rispondere.</p>
+<p>Mara si asciugò il viso con il dorso della mano.</p>
+<p>«Che cosa è successo tra loro?»</p>
+<p>Andrea guardò la Luna.</p>
+<p>«Niente.»</p>
+<p>«Niente?»</p>
+<p>«È questo il punto.»</p>
+<p>Le raccontò della distanza tra un mercenario e una divinità.</p>
+<p>Della missione.</p>
+<p>Della dedica.</p>
+<p>Quando pronunciò quelle parole, Mara portò una mano alla bocca.</p>
+<p>«Una missione che dura per sempre...» sussurrò.</p>
+<p>Andrea la guardò di scatto.</p>
+<p>«Come fai a saperlo?»</p>
+<p>Mara sembrava terrorizzata quanto lui.</p>
+<p>«Non lo so.»</p>
+<p>Il silenzio tra loro cambiò.</p>
+<p>Non era più il silenzio di due persone che cercavano di capire se i loro sogni fossero collegati.</p>
+<p>Era il silenzio di due persone che avevano appena scoperto che qualcosa le aveva aspettate per millenni.</p>
+<p>Andrea abbassò lo sguardo sulle proprie mani.</p>
+<p>«Non so qual è la missione.»</p>
+<p>Mara si sedette accanto a lui.</p>
+<p>«Forse non devi saperlo ancora.»</p>
+<p>«È durata tutto questo tempo.»</p>
+<p>«Allora può aspettare un altro po&#x27;.»</p>
+<p>Andrea rise piano.</p>
+<p>Poi la guardò.</p>
+<p>«Tu chi sei?»</p>
+<p>Mara osservò la Luna.</p>
+<p>«Non lo so.»</p>
+<p>Dopo qualche secondo aggiunse:</p>
+<p>«Ma quando sono con te, sento che lei è vicina.»</p>
+<p>Andrea annuì.</p>
+<p>«Anch&#x27;io.»</p>
+<p>Per la prima volta, il Comandante dentro il suo sangue non sembrò un estraneo.</p>
+<p>Sembrò sveglio.</p>
+      <div class="chapter-end">☾</div>
+    </article>
+<article class="chapter" id="cap-9">
+      <div class="chapter-kicker">CAPITOLO 9</div>
+      <h2>La distanza di una mano</h2>
+      <p>Nei giorni successivi Andrea cercò di vivere normalmente.</p>
+<p>Fu impossibile.</p>
+<p>Come si torna alla normalità dopo aver ricordato una guerra combattuta prima della storia?</p>
+<p>Come si va al supermercato sapendo che una parte del proprio DNA contiene l&#x27;impronta di un mercenario divino?</p>
+<p>Mara, sorprendentemente, era quella che riusciva a mantenere i piedi per terra.</p>
+<p>«Oggi niente dèi,» gli disse un pomeriggio.</p>
+<p>«Niente dèi?»</p>
+<p>«Niente missioni eterne. Niente figure col cappuccio. Niente DNA mistico.»</p>
+<p>«E cosa facciamo?»</p>
+<p>«Gelato.»</p>
+<p>Andrea la guardò.</p>
+<p>«Gelato.»</p>
+<p>«È una tecnologia del presente. Dovresti provarla.»</p>
+<p>Lui rise.</p>
+<p>Camminarono per ore.</p>
+<p>Parlarono di tutto tranne che del passato.</p>
+<p>E proprio per questo Andrea si accorse di una cosa importante.</p>
+<p>Non gli piaceva stare con Mara perché il Comandante aveva amato la dea della Luna.</p>
+<p>Gli piaceva stare con Mara perché era Mara.</p>
+<p>Rideva prima di finire le battute.<br>
+Si fermava a guardare i cani per strada.<br>
+Quando pensava, stringeva appena gli occhi.<br>
+E quando vedeva la Luna, anche piccola e pallida nel cielo del pomeriggio, cambiava espressione.</p>
+<p>Il passato poteva averli portati nello stesso punto.</p>
+<p>Ma il presente apparteneva a loro.</p>
+<p>Quella sera camminavano lungo un viale alberato.</p>
+<p>Le loro braccia si sfiorarono.</p>
+<p>Andrea si spostò appena.</p>
+<p>Non voleva trasformare ogni gesto in una profezia.</p>
+<p>Dopo qualche passo, le loro mani si avvicinarono di nuovo.</p>
+<p>Le dita di Mara sfiorarono le sue.</p>
+<p>Nessuno dei due parlò.</p>
+<p>Andrea sentì un ricordo.</p>
+<p>La terrazza.</p>
+<p>La mano della dea che si fermava a pochi centimetri dal volto del Comandante.</p>
+<p>Una distanza mai attraversata.</p>
+<p>Tornò al presente.</p>
+<p>La mano di Mara era ancora lì.</p>
+<p>Vicino.</p>
+<p>Non era una dea.</p>
+<p>Lui non era un mercenario.</p>
+<p>Non c&#x27;erano leggi divine a separarli.</p>
+<p>Solo una scelta.</p>
+<p>Andrea mosse leggermente le dita.</p>
+<p>Mara fece lo stesso.</p>
+<p>Le loro mani si unirono.</p>
+<p>Non ci fu luce.</p>
+<p>Nessun tuono.</p>
+<p>Nessuna voce dal cielo.</p>
+<p>Soltanto calore.</p>
+<p>Mara guardò davanti a sé.</p>
+<p>«Lo senti?»</p>
+<p>«Sì.»</p>
+<p>«È come quando c&#x27;è la Luna piena.»</p>
+<p>Andrea sorrise.</p>
+<p>«Ma è ancora giorno.»</p>
+<p>«Lo so.»</p>
+<p>Continuarono a camminare tenendosi per mano.</p>
+<p>Dopo qualche minuto Mara disse:</p>
+<p>«Posso dirti una cosa strana?»</p>
+<p>«A questo punto la soglia dello strano è molto alta.»</p>
+<p>Lei rise.</p>
+<p>«Quando mi hai raccontato quello che lui provava per lei... non mi è sembrato nuovo.»</p>
+<p>Andrea rimase in silenzio.</p>
+<p>«Era come se lo sapessi già,» continuò. «Come se qualcuno me l&#x27;avesse detto molto prima che nascessi.»</p>
+<p>Andrea strinse appena la sua mano.</p>
+<p>«E ti spaventa?»</p>
+<p>Mara ci pensò.</p>
+<p>«Un po&#x27;.»</p>
+<p>«Anche a me.»</p>
+<p>«Però non voglio lasciare la mano.»</p>
+<p>Andrea la guardò.</p>
+<p>«Nemmeno io.»</p>
+<p>Sopra gli edifici, il cielo cominciava a scurirsi.</p>
+<p>La Luna non era ancora visibile.</p>
+<p>Eppure entrambi la sentivano vicina.</p>
+      <div class="chapter-end">☾</div>
+    </article>
+<article class="chapter" id="cap-10">
+      <div class="chapter-kicker">CAPITOLO 10</div>
+      <h2>La missione continua</h2>
+      <p>Quella notte Andrea sognò il Comandante per l&#x27;ultima volta.</p>
+<p>Non era un ricordo.</p>
+<p>Almeno, non gli sembrò tale.</p>
+<p>Si trovava sulla terrazza della cittadella lunare.</p>
+<p>La stessa di sempre.</p>
+<p>Ma non c&#x27;erano eserciti.<br>
+Non c&#x27;erano divinità.<br>
+Non c&#x27;erano guerre.</p>
+<p>Soltanto il Comandante.</p>
+<p>Era rivolto verso la Terra.</p>
+<p>Andrea gli si avvicinò.</p>
+<p>«Sei tu?»</p>
+<p>Il guerriero non si voltò.</p>
+<p>«Dipende da cosa intendi.»</p>
+<p>«Sei dentro di me?»</p>
+<p>«Una parte.»</p>
+<p>«Sei vivo?»</p>
+<p>«Una parte.»</p>
+<p>Andrea sospirò.</p>
+<p>«Le risposte divine sono sempre così fastidiose?»</p>
+<p>Il Comandante rise.</p>
+<p>Per la prima volta Andrea lo sentì ridere.</p>
+<p>«Anche io facevo domande migliori delle risposte che ricevevo.»</p>
+<p>Andrea si fermò accanto a lui.</p>
+<p>«Qual è la missione?»</p>
+<p>Il Comandante guardò il pianeta.</p>
+<p>«Non lo so.»</p>
+<p>Andrea lo fissò.</p>
+<p>«Hai aspettato migliaia di anni e non lo sai?»</p>
+<p>«Te l&#x27;avevo detto.»</p>
+<p>«No. Tu non mi hai detto niente.»</p>
+<p>Il Comandante finalmente si voltò.</p>
+<p>«Eppure ricordi.»</p>
+<p>Andrea abbassò lo sguardo.</p>
+<p>«Mara è la dea della Luna?»</p>
+<p>Il guerriero rimase in silenzio.</p>
+<p>«Dimmelo.»</p>
+<p>«Se ti dessi un nome per ciò che è, smetteresti di guardare ciò che sta diventando.»</p>
+<p>Andrea aggrottò la fronte.</p>
+<p>«Questa è decisamente una risposta divina.»</p>
+<p>Il Comandante sorrise.</p>
+<p>«Io sono soltanto un mercenario.»</p>
+<p>Quelle parole colpirono Andrea più di qualsiasi rivelazione.</p>
+<p>«Tu l&#x27;amavi.»</p>
+<p>«Sì.»</p>
+<p>«E lei?»</p>
+<p>Il Comandante guardò il punto in cui, tanto tempo prima, la dea si era fermata senza toccarlo.</p>
+<p>«Alcune cose non hanno bisogno di essere possedute per essere vere.»</p>
+<p>Andrea pensò alla mano di Mara nella sua.</p>
+<p>«La missione era la tua dedica.»</p>
+<p>«Lo è ancora.»</p>
+<p>«Ma adesso è anche mia?»</p>
+<p>«È passata attraverso migliaia di vite per arrivare a te. Decidilo tu.»</p>
+<p>Andrea rimase in silenzio.</p>
+<p>Il Comandante si allontanò verso il bordo della terrazza.</p>
+<p>«Aspetta.»</p>
+<p>Il guerriero si fermò.</p>
+<p>«Ti rivedrò?»</p>
+<p>«Non ne hai bisogno.»</p>
+<p>«Come fai a saperlo?»</p>
+<p>Il Comandante indicò il cielo.</p>
+<p>La Luna sorse dietro la Terra.</p>
+<p>«Perché mi sono svegliato.»</p>
+<p>Andrea aprì gli occhi.</p>
+<p>Era mattina.</p>
+<p>Sul telefono c&#x27;era un messaggio di Mara.</p>
+<p>Una fotografia scattata poco prima dell&#x27;alba: la Luna ancora visibile sopra i tetti.</p>
+<p>Sotto, una frase.</p>
+<p>&quot;È ancora qui.&quot;</p>
+<p>Andrea sorrise.</p>
+<p>Rispose:</p>
+<p>&quot;Anch&#x27;io.&quot;</p>
+<p>Poi uscì.</p>
+<p>Durante il tragitto passò davanti alla stessa chiesa del 2022, quella davanti alla quale aveva sentito la chiamata per la prima volta.</p>
+<p>La croce era ancora lì.</p>
+<p>Andrea si fermò.</p>
+<p>Aspettò il brivido.</p>
+<p>Arrivò.</p>
+<p>Ma questa volta non sentì &quot;Vieni&quot;.</p>
+<p>Sentì qualcosa di diverso.</p>
+<p>Non una frase completa.</p>
+<p>Non ancora.</p>
+<p>Una direzione.</p>
+<p>Un&#x27;attesa.</p>
+<p>La certezza che la missione non fosse terminata e che, forse, non fosse nemmeno davvero cominciata.</p>
+<p>Andrea alzò lo sguardo.</p>
+<p>Nel cielo del mattino la Luna stava scomparendo nella luce.</p>
+<p>Per un istante, dietro il rumore delle auto e delle persone, gli sembrò di sentire l&#x27;eco di eserciti antichissimi.</p>
+<p>Poi il telefono vibrò.</p>
+<p>Mara:</p>
+<p>&quot;Caffè?&quot;</p>
+<p>Andrea rispose:</p>
+<p>&quot;Arrivo.&quot;</p>
+<p>Riprese a camminare.</p>
+<p>Non sapeva cosa Dio avesse chiesto al Comandante.<br>
+Non sapeva perché lo spirito fosse stato conservato nel sangue umano.<br>
+Non sapeva cosa fossero i ghoul, le Sisters of the Moon o le figure nere.</p>
+<p>Ma sapeva una cosa.</p>
+<p>Una missione iniziata prima della storia aveva attraversato il tempo fino a lui.</p>
+<p>E una dedica fatta a una dea aveva trovato, millenni dopo, una mano da stringere.</p>
+<p>Sotto la stessa Luna.</p>
+      <div class="chapter-end">☾</div>
+    </article>
+</section>
+<div class="footer">TO BE — The Commander and the Moon · Capsula di output offline</div>
+</main>
+</body>
+</html>
